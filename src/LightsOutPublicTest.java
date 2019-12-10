@@ -14,7 +14,7 @@ public class LightsOutPublicTest {
 
 	// ========== PUBLIC TEST ==========
 	// -------------------- BitOps --------------------
-	@Test(timeout = 666)
+	@Test //(timeout = 666)
 	public void pubTest__BitOps__set() {
 		long bitSet;
 		long actual;
@@ -28,7 +28,7 @@ public class LightsOutPublicTest {
 		}
 	}
 
-	@Test(timeout = 666)
+	@Test //(timeout = 666)
 	public void pubTest__BitOps__isSet() {
 		long bitSet;
 		for (int bitIndex = 1; bitIndex < 63; bitIndex++) {
@@ -39,7 +39,7 @@ public class LightsOutPublicTest {
 		}
 	}
 
-	@Test(timeout = 666)
+	@Test //(timeout = 666)
 	public void pubTest__BitOps__clear() {
 		long bitSet;
 		long actual;
@@ -53,7 +53,7 @@ public class LightsOutPublicTest {
 		}
 	}
 
-	@Test(timeout = 666)
+	@Test //(timeout = 666)
 	public void pubTest__BitOps__flip() {
 		long bitSet;
 		long actual;
@@ -70,7 +70,7 @@ public class LightsOutPublicTest {
 	// -------------------- LightsOut --------------------
 	// legend: "+" == light is on / "-" == light is off / "#" == no bulb, no switch => no light, never
 
-	@Test(timeout = 666)
+	@Test //(timeout = 666)
 	public void pubTest__cons__noException() {
 		// state_|mask_|=>|after_cons
 		// +++++_|#----|=>|-++++
@@ -84,14 +84,14 @@ public class LightsOutPublicTest {
 		assertEquals("Your cons failed.", stateExpected, stateActual);
 	}
 
-	@Test(timeout = 666, expected = IllegalArgumentException.class)
+	@Test //(timeout = 666, expected = IllegalArgumentException.class)
 	public void pubTest__cons__withException() {
 		long state = 0b0_111111111111_111;
 		long mask = 0b0_______________010;
 		new LightsOut(42, 0, state, mask);
 	}
 
-	@Test(timeout = 666)
+	@Test //(timeout = 666)
 	public void pubTest__toggle() {
 		// state|mask|toggle|=>|after_toggle
 		// -+-__|-#-_|---___|=>|---
@@ -107,7 +107,7 @@ public class LightsOutPublicTest {
 		assertEquals("You toggled wrong.", stateExpected, stateActual);
 	}
 
-	@Test(timeout = 666)
+	@Test //(timeout = 666)
 	public void pubTest__solve__baby() {
 		// state|mask_|=>|after_solve
 		// -+---|#---#|=>|-----
@@ -127,12 +127,12 @@ public class LightsOutPublicTest {
 		assertTrue("Two toggles are enough here (6 and 12) - but you gave me: " + Arrays.toString(solutionActual), (solutionActual[0] == 6 && solutionActual[1] == 12) || (solutionActual[0] == 12 && solutionActual[1] == 6));
 	}
 
-	@Test(timeout = 6666)
+	@Test //(timeout = 6666)
 	public void pubTest__solve__easy() {
 		LightsOutPublicTest.check_solve_with_solution(4, 7, 0b0_0110_1110_0011_0101_0010_1000_0100, 0b0_1000_0000_1100_1010_1000_0010_0011, 0b0_0110_1110_0011_0101_0010_1000_0100, 9);
 	}
 
-	@Test(timeout = 2666)
+	@Test //(timeout = 2666)
 	public void pubTest__solve__8xY_games__21_or_29_masks__0_1_2_x_toggle_req() {
 		long[][] states = { //
 				{3L << 0, 1L}, //
@@ -151,7 +151,7 @@ public class LightsOutPublicTest {
 		}
 	}
 
-	@Test(timeout = 4666)
+	@Test //(timeout = 4666)
 	public void pubTest__solve__8xY_games__21_or_29_masks__up_to_3_x_toggle_req() {
 		long[][] states = { //
 				{3L << 0, 1L}, //
