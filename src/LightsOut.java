@@ -14,6 +14,7 @@ public class LightsOut {
         return state;
     }
 
+
     public void toggle(int col, int row) {
         long changeMask = 0;
         int position = ((row - 1) * row) + (col - 1);
@@ -35,6 +36,6 @@ public class LightsOut {
                 changeMask <<= 1;
             }
         }
-        this.state = BitOps.flip (state, (int) changeMask);
+        this.state = BitOps.flip(state, (int) changeMask);
     }
 }
