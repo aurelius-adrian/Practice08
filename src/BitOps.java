@@ -19,4 +19,8 @@ public class BitOps {
     public static long flip (long bitSet, int bitIndex) {
         return (bitSet ^ bitIndex);
     }
+
+    public ZahlenFolgenMerker solve() {
+
+    }
 }

@@ -4,17 +4,16 @@
     <excludeFromCompile>
       <file url="file://$PROJECT_DIR$/src/MerkerFuerLightsOutLoesungsVersuche.java" />
       <file url="file://$PROJECT_DIR$/src/BranchCoveragePublicTest.java" />
-      <file url="file://$PROJECT_DIR$/src/Rechnung.java" />
       <file url="file://$PROJECT_DIR$/src/LightsOutPublicTest.java" />
       <file url="file://$PROJECT_DIR$/src/Test.java" />
       <file url="file://$PROJECT_DIR$/src/LightsOutGUI.java" />
       <file url="file://$PROJECT_DIR$/src/SchiffVersenken.java" />
       <file url="file://$PROJECT_DIR$/src/SchiffVersenkenMain.java" />
       <file url="file://$PROJECT_DIR$/src/Assert.java" />
-      <file url="file://$PROJECT_DIR$/src/Brieftasche.java" />
-      <file url="file://$PROJECT_DIR$/src/ChristkindlesmarktPublicTest.java" />
       <file url="file://$PROJECT_DIR$/src/Log.java" />
       <file url="file://$PROJECT_DIR$/src/ZahlenMerker.java" />
+      <file url="file://$PROJECT_DIR$/src/LightsOut.java" />
+      <file url="file://$PROJECT_DIR$/src/BitOps.java" />
       <file url="file://$PROJECT_DIR$/src/ZahlenFolgenMerker.java" />
     </excludeFromCompile>
   </component>
