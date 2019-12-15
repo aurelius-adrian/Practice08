@@ -1,5 +1,5 @@
 public interface ChristkindelsmarktKram {
-    public String beschreibung ();
+    String beschreibung ();
 
-    public int preis ();
+    int preis ();
 }
