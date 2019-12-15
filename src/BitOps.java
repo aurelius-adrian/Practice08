@@ -13,7 +13,7 @@ public class BitOps {
     }
 
     public static long clear (long bitSet, int bitIndex) {
-        return flip(bitIndex, -1) & bitSet;
+        return bitIndex & bitSet;
     }
 
     public static long flip (long bitSet, int bitIndex) {
@@ -21,6 +21,6 @@ public class BitOps {
     }
 
     public ZahlenFolgenMerker solve() {
-
+        return null;
     }
 }

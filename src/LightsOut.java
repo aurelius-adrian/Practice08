@@ -38,4 +38,8 @@ public class LightsOut {
         }
         this.state = BitOps.flip(state, (int) changeMask);
     }
+
+    public ZahlenFolgenMerker solve ( ) {
+        return null;
+    }
 }
