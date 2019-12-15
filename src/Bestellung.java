@@ -1,4 +1,4 @@
-public class Bestellung implements ChristkindelsmarktKram {
+public class Bestellung implements ChristkindlesmarktKram {
     @Override
     public final String beschreibung() {
         return null;
@@ -11,11 +11,11 @@ public class Bestellung implements ChristkindelsmarktKram {
 
     private final int menge;
 
-    public Bestellung (ChristkindelsmarktKram kram, int menge) {
+    public Bestellung (ChristkindlesmarktKram kram, int menge) {
         this.menge = menge;
     }
 
-    public ChristkindelsmarktKram Kram () {
+    public ChristkindlesmarktKram kram () {
         return null;
     }
 

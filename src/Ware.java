@@ -1,4 +1,4 @@
-public class Ware implements ChristkindelsmarktKram {
+public class Ware implements ChristkindlesmarktKram {
     private final String beschreibung;
     private final int preis;
 
